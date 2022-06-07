@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="gitlab"
+          fetch="https://gitlab.com" />
+
   <!-- crDroid additions -->
   <project path="android" name="crdroidandroid/android" remote="crdroid" />
 
@@ -43,7 +46,7 @@
   <project path="external/zlib" name="crdroidandroid/android_external_zlib" remote="crdroid" />
 
   <project path="frameworks/av" name="crdroidandroid/android_frameworks_av" remote="crdroid" />
-  <project path="frameworks/base" name="crdroidandroid/android_frameworks_base" remote="crdroid" />
+  <project path="frameworks/base" name="crdroid-kebab/android_frameworks_base" remote="crdroid" />
   <project path="frameworks/libs/net" name="crdroidandroid/android_frameworks_libs_net" remote="crdroid" />
   <project path="frameworks/libs/systemui" name="crdroidandroid/android_frameworks_libs_systemui" remote="crdroid" />
   <project path="frameworks/native" name="crdroidandroid/android_frameworks_native" remote="crdroid" />
@@ -71,7 +74,6 @@
   <project path="packages/apps/Launcher3" name="crdroidandroid/android_packages_apps_Launcher3" remote="crdroid" />
   <project path="packages/apps/LineageParts" name="crdroidandroid/android_packages_apps_LineageParts" remote="crdroid" />
   <project path="packages/apps/Matlog" name="crdroidandroid/android_packages_apps_Matlog" remote="crdroid" />
-  <project path="packages/apps/Messaging" name="crdroidandroid/android_packages_apps_Messaging" remote="crdroid" />
   <project path="packages/apps/Nfc" name="crdroidandroid/android_packages_apps_Nfc" remote="crdroid" />
   <project path="packages/apps/Profiles" name="crdroidandroid/android_packages_apps_Profiles" remote="crdroid" />
   <project path="packages/apps/Settings" name="crdroidandroid/android_packages_apps_Settings" remote="crdroid" />
@@ -104,11 +106,22 @@
 
   <project path="vendor/addons" name="crdroidandroid/android_vendor_addons" remote="crdroid" />
   <project path="vendor/crDroidOTA" name="crdroidandroid/android_vendor_crDroidOTA" remote="crdroid" />
-  <project path="vendor/lineage" name="crdroidandroid/android_vendor_crdroid" remote="crdroid" />
+  <project path="vendor/lineage" name="crdroid-kebab/android_vendor_crdroid" remote="crdroid" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="crdroidandroid/android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="crdroid" />
   <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="crdroidandroid/android_vendor_qcom_opensource_bluetooth_ext" remote="crdroid" />
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="crdroidandroid/android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="crdroid" />
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="crdroidandroid/android_vendor_qcom_opensource_system_bt" remote="crdroid" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="crdroidandroid/android_vendor_qcom_opensource_cryptfs_hw" remote="crdroid" />
   <project path="vendor/qcom/opensource/healthd-ext" name="crdroidandroid/android_vendor_qcom_opensource_healthd-ext" remote="crdroid" />
+  
+  <!--Device specific repos repos-->
+  <project path="device/oneplus/kebab" name="crdroid-kebab/android_device_oneplus_kebab" groups="qcom,pdk-qcom" revision="12.1" />
+  <project path="device/oneplus/sm8250-common" name="crdroid-kebab/android_device_oneplus_sm8250-common" groups="qcom,pdk-qcom" revision="12.1" />
+  <project path="hardware/oneplus" name="crdroidandroid/android_hardware_oneplus" groups="qcom,pdk-qcom" revision="12.1-op8" />
+  <project path="kernel/oneplus/sm8250" name="crdroid-kebab/android_kernel_oneplus_sm8250" groups="qcom,pdk-qcom" revision="12.1" />
+  <project path="vendor/oneplus/apps" name="umang96/android_vendor_oneplus_apps" groups="qcom,pdk-qcom" revision="12.1" remote="gitlab" />
+  <project path="vendor/oneplus/kebab" name="crdroidandroid/proprietary_vendor_oneplus_kebab" groups="qcom,pdk-qcom" revision="12.1" remote="gitlab" />
+  <project path="vendor/oneplus/sm8250-common" name="crdroidandroid/proprietary_vendor_oneplus_sm8250-common" groups="qcom,pdk-qcom" revision="12.1" remote="gitlab" />
+  <project path="vendor/gapps" name="umang96/android_vendor_gapps" revision="12.1" remote="gitlab" />
+
 </manifest>
